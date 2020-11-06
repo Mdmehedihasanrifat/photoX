@@ -146,6 +146,17 @@ h5{
 
   color: orangered!important;
 }
+.customers{
+background: #1e1f1e;
+
+
+}
+.carousel-inner h5{
+
+  position: unset;
+  opacity: 1;
+  background: none;
+}
 
 
 
@@ -154,5 +165,128 @@ h5{
 
 
 
+#price h5{
+  position: unset;
+}
 
 
+.card-1,.card-2,.card-3{
+
+  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.6)),
+          url("./images/pricing-card-bg.jpeg") center no-repeat;
+  background-size: cover;
+box-shadow: 7px 10px 15px #3d523d;
+  max-width: 400px;
+
+}
+
+.card-list{
+
+  border-bottom: 1px solid white;
+  width: 55%;
+  margin: auto;
+}
+.price-button{
+
+  background-color: #d24816;
+  width: 130px;
+  border-radius:25px;
+  box-shadow: 5px 7px 20px #1f1d1d;
+  transition: all .5s;
+}
+.price-button:hover{
+  background-color: #f14707;
+   transform: translateY(-3px);
+
+
+
+}
+
+.moveFromRight{
+
+  animation-name: moveFromRight;
+  animation-duration: 2s;
+}
+.moveFromLeft{
+
+  animation-name: moveFromLeft;
+  animation-duration: 2s;
+}
+
+.moveFromBottom{
+
+  animation-name: moveFromBottom;
+  animation-duration: 2s;
+}
+@keyframes moveFromRight {
+
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveFromLeft {
+
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+@keyframes moveFromBottom {
+
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/*contact */
+
+
+.contact{
+
+  background:linear-gradient(105deg,
+  rgba(0,0,0,.1)0%,
+  rgba(0,0,0,1)50%,
+  transparent 50%),
+  url("./images/form-img.jpeg") center no-repeat;
+  background-size: cover;
+  color:white;
+}
+
+
+@media (max-width: 992px){
+  .contact{
+    background:linear-gradient(  rgba(0,0,0,.5)0%,
+    rgba(0,0,0,1)50%);
+    width: 95%;
+    margin: auto;
+
+  }
+
+}
+/*end of contact */
+
+
+/*footer*/
+
+.footer-link{
+
+  color:white;
+}
+
+/*End of foooter*/

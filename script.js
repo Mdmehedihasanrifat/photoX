@@ -38,7 +38,25 @@ $('.gallery-list-items').click(function () {
 
 
 
+$(window).scroll(function () {
 
+    var position=$(this).scrollTop();
+
+console.log(position);
+    if(position>4300){
+
+
+        $('.card-1').addClass('moveFromLeft');
+        $('.card-2').addClass('moveFromBottom');
+        $('.card-3').addClass('moveFromRight');
+    }
+    else{
+        $('.card-3').removeClass('moveFromRight');
+        $('.card-1').removeClass('moveFromLeft');
+        $('.card-2').removeClass('moveFromBottom');
+
+    }
+})
 
 
 
